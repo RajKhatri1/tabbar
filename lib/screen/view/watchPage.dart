@@ -41,7 +41,7 @@ class _watchState extends State<watch> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Image.asset("assets/images/watch.png",),
+          Image.asset("assets/images/watch.png",height: 180),
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
@@ -53,7 +53,7 @@ class _watchState extends State<watch> {
                 height: 25,
               ),
               Text(
-                "\$ 150",
+                "\$150",
                 style: TextStyle(
                     fontSize: 25,
                     color: Colors.black,

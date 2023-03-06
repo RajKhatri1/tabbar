@@ -8,11 +8,7 @@ class Homescreen extends StatefulWidget {
 }
 
 class _HomescreenState extends State<Homescreen> {
-  List c1 = [
-    Colors.greenAccent.shade100,
-    Colors.pinkAccent.shade100,
-    Colors.tealAccent.shade100,
-  ];
+  List c1 = [];
   List l1 = [
     "assets/images/shoes.png",
     "assets/images/tshirt.png",
@@ -25,22 +21,25 @@ class _HomescreenState extends State<Homescreen> {
     return SafeArea(
       child: Scaffold(
         body: SingleChildScrollView(
-          child: Column(
-            children: [
-              product(Colors.greenAccent.shade100, l1[0]),
-              SizedBox(
-                height: 5,
-              ),
-              product(Colors.pinkAccent.shade100, l1[1]),
-              SizedBox(
-                height: 5,
-              ),
-              product(Colors.tealAccent.shade100, l1[2]),
-              SizedBox(
-                height: 5,
-              ),
-              product(Colors.greenAccent.shade100, l1[3]),
-            ],
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              children: [
+                product(Colors.greenAccent.shade100, l1[0]),
+                SizedBox(
+                  height: 5,
+                ),
+                product(Colors.pinkAccent.shade100, l1[1]),
+                SizedBox(
+                  height: 5,
+                ),
+                product(Colors.tealAccent.shade100, l1[2]),
+                SizedBox(
+                  height: 5,
+                ),
+                product(Colors.greenAccent.shade100, l1[3]),
+              ],
+            ),
           ),
         ),
       ),
@@ -69,7 +68,7 @@ class _HomescreenState extends State<Homescreen> {
                   height: 25,
                 ),
                 Text(
-                  "\$ 150",
+                  "\$150",
                   style: TextStyle(
                       fontSize: 25,
                       color: Colors.black,

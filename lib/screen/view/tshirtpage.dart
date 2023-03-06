@@ -40,7 +40,7 @@ class _tshirtScreenState extends State<tshirtScreen> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Image.asset("assets/images/tshirt.png",),
+          Image.asset("assets/images/tshirt.png",height: 170),
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
@@ -52,7 +52,7 @@ class _tshirtScreenState extends State<tshirtScreen> {
                 height: 25,
               ),
               Text(
-                "\$ 150",
+                "\$150",
                 style: TextStyle(
                     fontSize: 25,
                     color: Colors.black,
